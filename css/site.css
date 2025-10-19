@@ -1,6 +1,38 @@
-body{font-family:system-ui,Arial,sans-serif;margin:0;padding:0;color:#111;background:#fff}
-header{padding:48px 24px;background:#111;color:#fff}
-h1{margin:0 0 8px}
-.cta{display:inline-block;margin-top:16px;padding:10px 16px;background:#d4a017;color:#111;text-decoration:none;font-weight:700}
-section{padding:32px 24px}
-footer{padding:24px;background:#f4f4f4}
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0; padding: 0;
+  color: #222; background: #fff;
+  scroll-behavior: smooth;
+}
+header.hero {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+.logo {
+  width: 140px; margin-bottom: 20px;
+}
+h1, h2, h3, h4 { margin-bottom: 0.5em; }
+section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+section.dark { background: #111; color: #f9f9f9; }
+.btn {
+  padding: 12px 24px; border-radius: 4px;
+  font-weight: 600; margin: 5px; display: inline-block;
+  text-decoration: none;
+}
+.btn.gold { background: #d4a017; color: #111; }
+.btn.outline { border: 2px solid #d4a017; color: #d4a017; }
+.grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.projects-grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.project img { width: 100%; border-radius: 6px; }
+footer {
+  background: #000; color: #bbb; text-align: center;
+  padding: 20px; font-size: 14px;
+}
